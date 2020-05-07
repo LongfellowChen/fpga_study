@@ -1,0 +1,8 @@
+12:26:13 **** Incremental Build of configuration Debug for project zedboard_getting_started_with_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+12:26:15 Build Finished (took 2s.73ms)
+
