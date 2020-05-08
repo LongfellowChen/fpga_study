@@ -61,12 +61,12 @@ architecture Behavioral of pwm is
     
     func_pwm : process(GCLK, Rst)
     
-        constant pwm0_period : natural := 1000000; --1000000=5000us
+        constant pwm0_period : natural := 1000000; --100000=1000us
         variable pwm0_duty : natural range 0 to pwm0_period := 0;
         variable pwm0_count : natural range 0 to pwm0_period := 0;
         variable dir : natural range 0 to 1 := 0;   
              
-        constant max_delay_count : natural := 100; --1000000=5000us
+        constant max_delay_count : natural := 100; --100000=1000us
         variable delay_count : natural range 0 to max_delay_count := 0;
 
     begin
