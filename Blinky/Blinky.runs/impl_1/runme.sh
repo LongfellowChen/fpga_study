@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/fello/Desktop/Vivado/Blinky/Blinky.runs/impl_1'
+HD_PWD='C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

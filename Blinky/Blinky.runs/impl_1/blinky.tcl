@@ -70,12 +70,12 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/fello/Desktop/Vivado/Blinky/Blinky.cache/wt [current_project]
-  set_property parent.project_path C:/Users/fello/Desktop/Vivado/Blinky/Blinky.xpr [current_project]
-  set_property ip_output_repo C:/Users/fello/Desktop/Vivado/Blinky/Blinky.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.cache/wt [current_project]
+  set_property parent.project_path C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.xpr [current_project]
+  set_property ip_output_repo C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/fello/Desktop/Vivado/Blinky/Blinky.runs/synth_1/blinky.dcp
-  read_xdc C:/Users/fello/Desktop/Vivado/Blinky/Blinky.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc
+  add_files -quiet C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.runs/synth_1/blinky.dcp
+  read_xdc C:/Users/fello/Desktop/Vivado/fpga_study/Blinky/Blinky.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc
   link_design -top blinky -part xc7z020clg484-1
   close_msg_db -file init_design.pb
 } RESULT]

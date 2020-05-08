@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed May  6 09:33:47 2020
+| Date         : Thu May  7 16:43:50 2020
 | Host         : DESKTOP-K6CP9K3 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file blinky_timing_summary_routed.rpt -pb blinky_timing_summary_routed.pb -rpx blinky_timing_summary_routed.rpx -warn_on_violation
 | Design       : blinky
@@ -52,7 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 21 register/latch pins with no clock driven by root clock pin: GCLK (HIGH)
+ There are 49 register/latch pins with no clock driven by root clock pin: GCLK (HIGH)
 
 
 2. checking constant_clock
@@ -67,7 +67,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 42 pins that are not constrained for maximum delay. (HIGH)
+ There are 96 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

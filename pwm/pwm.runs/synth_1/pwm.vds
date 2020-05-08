@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May  8 09:20:40 2020
+# Process ID: 508
+# Current directory: C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.runs/synth_1
+# Command line: vivado.exe -log pwm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm.tcl
+# Log file: C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.runs/synth_1/pwm.vds
+# Journal file: C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pwm.tcl -notrace
+Command: synth_design -top pwm -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6308 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 338.863 ; gain = 77.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:56]
+WARNING: [Synth 8-3848] Net LD1 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:46]
+WARNING: [Synth 8-3848] Net LD2 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:47]
+WARNING: [Synth 8-3848] Net LD3 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:48]
+WARNING: [Synth 8-3848] Net LD4 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:49]
+WARNING: [Synth 8-3848] Net LD5 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:50]
+WARNING: [Synth 8-3848] Net LD6 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:51]
+WARNING: [Synth 8-3848] Net LD7 in module/entity pwm does not have driver. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (1#1) [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/sources_1/new/pwm.vhdl:56]
+WARNING: [Synth 8-3331] design pwm has unconnected port LD1
+WARNING: [Synth 8-3331] design pwm has unconnected port LD2
+WARNING: [Synth 8-3331] design pwm has unconnected port LD3
+WARNING: [Synth 8-3331] design pwm has unconnected port LD4
+WARNING: [Synth 8-3331] design pwm has unconnected port LD5
+WARNING: [Synth 8-3331] design pwm has unconnected port LD6
+WARNING: [Synth 8-3331] design pwm has unconnected port LD7
+WARNING: [Synth 8-3331] design pwm has unconnected port SW0
+WARNING: [Synth 8-3331] design pwm has unconnected port SW1
+WARNING: [Synth 8-3331] design pwm has unconnected port SW2
+WARNING: [Synth 8-3331] design pwm has unconnected port SW3
+WARNING: [Synth 8-3331] design pwm has unconnected port SW4
+WARNING: [Synth 8-3331] design pwm has unconnected port SW5
+WARNING: [Synth 8-3331] design pwm has unconnected port SW6
+WARNING: [Synth 8-3331] design pwm has unconnected port SW7
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 395.172 ; gain = 133.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 395.172 ; gain = 133.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 395.172 ; gain = 133.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc:375]
+Finished Parsing XDC File [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.srcs/constrs_1/imports/digilent-xdc-master/Zedboard-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pwm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pwm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 738.008 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 738.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 738.008 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 738.891 ; gain = 0.883
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 738.891 ; gain = 477.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 738.891 ; gain = 477.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 738.891 ; gain = 477.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "dir" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 738.891 ; gain = 477.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design pwm has unconnected port LD1
+WARNING: [Synth 8-3331] design pwm has unconnected port LD2
+WARNING: [Synth 8-3331] design pwm has unconnected port LD3
+WARNING: [Synth 8-3331] design pwm has unconnected port LD4
+WARNING: [Synth 8-3331] design pwm has unconnected port LD5
+WARNING: [Synth 8-3331] design pwm has unconnected port LD6
+WARNING: [Synth 8-3331] design pwm has unconnected port LD7
+WARNING: [Synth 8-3331] design pwm has unconnected port SW0
+WARNING: [Synth 8-3331] design pwm has unconnected port SW1
+WARNING: [Synth 8-3331] design pwm has unconnected port SW2
+WARNING: [Synth 8-3331] design pwm has unconnected port SW3
+WARNING: [Synth 8-3331] design pwm has unconnected port SW4
+WARNING: [Synth 8-3331] design pwm has unconnected port SW5
+WARNING: [Synth 8-3331] design pwm has unconnected port SW6
+WARNING: [Synth 8-3331] design pwm has unconnected port SW7
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 738.891 ; gain = 477.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 746.145 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 746.219 ; gain = 484.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    22|
+|4     |LUT2   |     2|
+|5     |LUT3   |    21|
+|6     |LUT4   |    27|
+|7     |LUT5   |     5|
+|8     |LUT6   |     9|
+|9     |FDRE   |    49|
+|10    |IBUF   |     1|
+|11    |OBUF   |     1|
+|12    |OBUFT  |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   173|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 766.293 ; gain = 161.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:16 . Memory (MB): peak = 766.293 ; gain = 505.063
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 47 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:21 . Memory (MB): peak = 769.848 ; gain = 508.617
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fello/Desktop/Vivado/fpga_study/pwm/pwm.runs/synth_1/pwm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pwm_utilization_synth.rpt -pb pwm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  8 09:22:10 2020...
