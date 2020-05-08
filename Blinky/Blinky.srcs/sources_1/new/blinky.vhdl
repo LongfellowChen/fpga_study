@@ -60,52 +60,30 @@ architecture Behavioral of blinky is
  
     Rst <= '0';
     
-    func_pwm : process(GCLK, Rst)
+    func_main : process(GCLK, Rst)
     
-        constant pwm0_period : natural := 1000000; --1000000=5000us
-        variable pwm0_duty : natural range 0 to pwm0_period := 0;
-        variable pwm0_count : natural range 0 to pwm0_period := 0;
-        variable dir : natural range 0 to 1 := 0;   
-             
-        constant max_delay_count : natural := 100; --1000000=5000us
+        constant max_delay_count : natural := 1000*100000; --100000=1000us
         variable delay_count : natural range 0 to max_delay_count := 0;
 
     begin
     
         if Rst = '1' then
-            pwm0_duty := 0;
+            delay_count := 0;
         end if;
         
         if rising_edge(GCLK) then
-            if pwm0_count < pwm0_duty then
+            if delay_count < max_delay_count/2 then
                 LD0 <= '1';
             else
                 LD0 <= '0';
             end if;
             
-            pwm0_count := pwm0_count + 1;
-            if pwm0_count = pwm0_period then
-                pwm0_count := 0;
-            end if;
-            
             delay_count := delay_count + 1;
             if delay_count = max_delay_count then
                 delay_count := 0;
-                if dir  = 0 then
-                    pwm0_duty := pwm0_duty + 1;
-                    if pwm0_duty = pwm0_period then
-                        dir := 1;
-                    end if;
-                else
-                    pwm0_duty := pwm0_duty - 1;
-                    if pwm0_duty = 0 then
-                        dir := 0;
-                    end if;
-                end if;
             end if;
-            
         end if;
-    end process func_pwm; 
+    end process func_main; 
     
     sw1_led1 : process(GCLK)
     begin

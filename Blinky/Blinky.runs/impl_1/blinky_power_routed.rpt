@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu May  7 16:43:50 2020
+| Date             : Fri May  8 10:09:47 2020
 | Host             : DESKTOP-K6CP9K3 running 64-bit major release  (build 9200)
 | Command          : report_power -file blinky_power_routed.rpt -pb blinky_power_summary_routed.pb -rpx blinky_power_routed.rpx
 | Design           : blinky
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.386        |
+| Total On-Chip Power (W)  | 1.987        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.229        |
-| Device Static (W)        | 0.158        |
+| Dynamic (W)              | 1.842        |
+| Device Static (W)        | 0.145        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 57.5         |
-| Junction Temperature (C) | 52.5         |
+| Max Ambient (C)          | 62.1         |
+| Junction Temperature (C) | 47.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.323 |      166 |       --- |             --- |
-|   LUT as Logic |     0.220 |       72 |     53200 |            0.14 |
-|   CARRY4       |     0.083 |       28 |     13300 |            0.21 |
-|   Register     |     0.015 |       49 |    106400 |            0.05 |
+| Slice Logic    |     0.085 |       58 |       --- |             --- |
+|   LUT as Logic |     0.036 |       13 |     53200 |            0.02 |
+|   CARRY4       |     0.031 |       14 |     13300 |            0.11 |
+|   Register     |     0.012 |       28 |    106400 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.307 |      148 |       --- |             --- |
-| I/O            |     1.599 |       10 |       200 |            5.00 |
-| Static Power   |     0.158 |          |           |                 |
-| Total          |     2.386 |          |           |                 |
+| Signals        |     0.167 |       80 |       --- |             --- |
+| I/O            |     1.589 |       10 |       200 |            5.00 |
+| Static Power   |     0.145 |          |           |                 |
+| Total          |     1.987 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.659 |       0.638 |      0.021 |
-| Vccaux    |       1.800 |     0.076 |       0.058 |      0.018 |
-| Vcco33    |       3.300 |     0.451 |       0.450 |      0.001 |
+| Vccint    |       1.000 |     0.277 |       0.260 |      0.017 |
+| Vccaux    |       1.800 |     0.074 |       0.058 |      0.016 |
+| Vcco33    |       3.300 |     0.449 |       0.448 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.040 |       0.000 |      0.040 |
+| Vccpint   |       1.000 |     0.034 |       0.000 |      0.034 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -145,7 +145,7 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| blinky |     2.229 |
+| blinky |     1.842 |
 +--------+-----------+
 
 
